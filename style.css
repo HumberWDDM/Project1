@@ -226,3 +226,16 @@ h4~p{
 #book_btn2 {
     background-color: #f76e2a;
 }
+
+/* newsletter */
+.newsletter{
+    width: calc(100vw - (100vw - 100%));
+    height: 490px;
+    background-position: center;
+    color: white;
+}
+
+.news_container{
+    box-sizing: border-box;
+    padding: 100px;
+}
