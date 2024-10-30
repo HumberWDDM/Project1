@@ -9,3 +9,55 @@ img{
 a{
     text-decoration: none;
 }
+
+/* nav */
+.nav_container {
+    background-color: transparent;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    z-index: 1;
+    box-shadow: 0 5px 10px 0 rgba(26,47,51,.2)
+}
+
+.logo{
+    width: 132px;
+    height: 49.57px;
+}
+
+ul{
+    list-style: none;
+}
+
+nav li {
+    float: left;
+    margin: 0 25px;
+}
+
+nav li a {
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+.button {
+    width: 160px;
+    height: 60px;
+    line-height: calc(60px - 2px);
+    margin-right: 100px;
+    background-color: #f76e2a;
+    text-align: center;
+}
+
+.button a {
+    font-family: 'Cinzel';
+    font-size: 14px;
+    color: white;
+}
