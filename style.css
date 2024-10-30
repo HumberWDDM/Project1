@@ -266,3 +266,22 @@ footer{
     width: calc(100vw - (100vw - 100%));
     background-color: #f3f2f0;
 }
+
+.footer__grid{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: safe center;
+    gap: 80px;
+    line-height: 1.7;
+}
+
+.images-g{
+    display: flex;
+    gap: 15px;
+}
+
+.images-g img{
+    width: 86px;
+    height: 86px;
+    border-radius: 15%;
+}
