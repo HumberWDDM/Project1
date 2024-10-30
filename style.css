@@ -178,3 +178,21 @@ p {
     gap: 50px;
     margin-top: 50px;
 }
+
+.f img {
+    width: 70px;
+    height: 70px;
+}
+
+h4{
+    font-family: 'Belleza';
+    font-weight: lighter;
+    font-size: 28px;
+    margin: 30px;
+}
+
+h4~p{
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 1.7;
+}
