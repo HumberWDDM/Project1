@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tastyc Food & Drinks</title>
     <link rel="stylesheet" href="./styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Belleza&family=Cinzel:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
 </head>
 <body>
     <!-- Navigation -->
     <header>
-        <div class="container">
+        <div class="nav_container">
             <div class="logo">
                 <img src="./images/logo-sm-white.png" alt="">
             </div>
@@ -34,10 +39,10 @@
         <!-- HOME SECTION -->
         <section class="hero">
             <div class="overlay">
-                <p>Hello, New Friend!</p>
-                <h2>RESERVE YOUR TABLE TODAY</h2>
+                <p id="home_p">Hello, New Friend!</p>
+                <h2>RESERVE YOUR<br>TABLE TODAY</h2>
                 <div class="cta-buttons">
-                    <button>Book a Table</button>
+                    <button id="book_btn">Book a Table</button>
                     <button>Open Menu</button>
                 </div>
             </div>
@@ -49,9 +54,9 @@
                 <div class="about__grid about__grid-1">
                     <div class="lft">
                         <span class="orange-line">About Us</span>
-                        <h3>We Invite You to Visit Our Restaurant</h3>
-                        <p>Repudiandae dignissimos fugiat sit nam. Tempore aspernatur quae repudiandae dolorem, beatae dolorum, praesentium itaque et quam quaerat.</p>
-                        <a href="#">READ MORE</a>
+                        <h3 class="common_h3">We Invite You to Visit Our Restaurant</h3>
+                        <p class="common_p">Repudiandae dignissimos fugiat sit nam. Tempore aspernatur quae repudiandae dolorem, beatae dolorum, praesentium itaque et quam quaerat.</p>
+                        <a class="about_a" href="#">READ MORE</a>
                     </div>
                     <div class="rgt">
                         <img src="./images/about1.jpg.webp" alt="">
@@ -65,7 +70,7 @@
                         <span class="orange-line">Restaurant Menu</span>
                         <h3>Always Fresh <br> Ingredients</h3>
                         <p>Repudiandae dignissimos fugiat sit nam. Tempore aspernatur quae repudiandae dolorem, beatae dolorum, praesentium itaque et quam quaerat.</p>
-                        <a href="#">VIEW MENU</a>
+                        <a class="about_a" href="#">VIEW MENU</a>
                     </div>
                 </div>
             </div>
@@ -73,25 +78,25 @@
 
         <!-- FEATURES  -->
         <section class="features">
-            <div class="container">
-                <span>Features</span>
+            <div class="fea_container">
+                <span class="features_span">Features</span>
                 <h3>Why people choose us?</h3>
                 <p>Porro eveniet, autem ipsam vitae consequatur!</p>
                 <div class="features__grid">
                     <div class="f f1">
                         <img src="./images/icon-serv-1-256x256.png" alt="">
                         <h4>Menu for every taste</h4>
-                        <p>Dolor sit amet, consectetur adipisicing elit et molestias possimus</p>
+                        <p>Dolor sit amet, consectetur adipisicing elit et<br>molestias possimus</p>
                     </div>
                     <div class="f f2">
                         <img src="./images/icon-serv-2-256x256.png" alt="">
                         <h4>Always fresh ingredients</h4>
-                        <p>Assumenda possimus eaque illo iste, autem. Porro eveniet autem</p>
+                        <p>Assumenda possimus eaque illo iste, autem.<br>Porro eveniet autem</p>
                     </div>
                     <div class="f f3">
                         <img src="./images/icon-serv-3-256x256.png" alt="">
                         <h4>Experienced chefs</h4>
-                        <p>Rolorem, beatae dolorum, praesentium itaque et quam quaerat</p>
+                        <p>Rolorem, beatae dolorum, praesentium itaque et<br>quam quaerat</p>
                     </div>
                 </div>
             </div>
@@ -99,17 +104,17 @@
         
         <!-- VIDEO SECTION  -->
         <section class="video-sec">
-            <video width="100%" height="240" controls style="object-fit: cover;">
+            <video width="100%" height="500" controls style="object-fit: cover;">
                 <source src="movie.mp4" type="video/mp4">
                 <source src="movie.ogg" type="video/ogg">
                 Your browser does not support the video tag.
             </video>
             <div class="abs-content">
                 <span class="orange-line">Reservation</span>
-                <h3>Working hours</h3>
+                <h3 class="common_h3">Working hours</h3>
                 <p>Rolorem, beatae dolorum, praesentium itaque et quam quaerat.</p>
                 <div class="btns">
-                    <a href="#">BOOK A TABLE</a>
+                    <a id="book_btn2"href="#">BOOK A TABLE</a>
                     <a href="#">CONTACT US</a>
                 </div>
             </div>
@@ -117,7 +122,7 @@
 
         <!-- NEWSLETTER -->
         <section class="newsletter" style="background-image: url(./images/reservation-bg.jpg);">
-            <div class="container">
+            <div class="news_container">
                 <span class="orange-line">Newsletter</span>
                 <h3>Subscribe our newsletter</h3>
                 <p>Rolorem, beatae dolorum, praesentium itaque et quam quaerat.</p>
@@ -139,12 +144,12 @@
             <hr>
             <div class="footer__grid">
                 <div class="col col1">
-                    <h3>About us</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita repudiandae neque illum aspernatur fugiat maiores id magni, modi, quaerat vitae.</p>
-                    <a href="#">Read More</a>
+                    <h5>About us</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur<br>adipisicing elit. Expedita repudiandae neque illum<br>aspernatur fugiat maiores id magni, modi, quaerat<br>vitae.</p>
+                    <a class="read_more" href="#">Read More</a>
                 </div>
                 <div class="col col2">
-                    <h3>Contact info</h3>
+                    <h5>Contact info</h5>
                     <ol>
                         <li>
                             <b>Call :</b>
@@ -159,10 +164,10 @@
                             <u>Canada, Toronto, Avenue 31B,</u>
                         </li>
                     </ol>
-                    <a href="#">Read More</a>
+                    <a class="read_more" href="#">Read More</a>
                 </div>
                 <div class="col col3">
-                    <h3>Gallery</h3>
+                    <h5>Gallery</h5>
                     <div class="images-g">
                         <img src="./images/gallery-i-2.jpg" alt="">
                         <img src="./images/gallery-i-4.jpg" alt="">
@@ -179,13 +184,6 @@
     <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
 
 
 <!-- ELEMENTS USED  -->
@@ -216,3 +214,5 @@
 <u></u>
 <iframe></iframe>
 -->
+
+
