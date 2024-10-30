@@ -257,3 +257,12 @@ input~button {
     font-family: 'Cinzel';
     font-size: 15px;
 }
+
+/* footer */
+iframe{
+    display: block;
+}
+footer{
+    width: calc(100vw - (100vw - 100%));
+    background-color: #f3f2f0;
+}
