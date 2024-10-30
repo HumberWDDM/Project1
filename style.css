@@ -61,3 +61,20 @@ nav li a {
     font-size: 14px;
     color: white;
 }
+
+/* home */
+.hero{
+    background: linear-gradient(to bottom, #000000 -5%, rgba(0, 0, 0, 0) 99%), url("/images/seafood-slide.jpg");
+    background-size: cover;
+    background-position: center;
+    width:100%;
+    height: 658px;
+    margin-bottom: 50px;
+}
+
+.overlay {
+    position: relative;
+    top: 150px;
+    color: #e5ebef;
+    text-align: center;
+}
