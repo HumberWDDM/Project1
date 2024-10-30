@@ -103,3 +103,52 @@ h2 {
 #book_btn {
     border: 2px solid;
 }
+
+/* about */
+.about__grid {
+    display: flex;
+    justify-content: center;
+}
+.lft{
+    box-sizing: border-box;
+    width: 600px;
+    height: 600px;
+    padding: 60px;
+}
+.rgt{
+    width: 600px;
+    height: 600px;
+}
+
+.rgt img{
+    width:100%;
+    height:100%;
+    object-fit: fit;
+}
+
+.orange-line {
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: 'Belleza';
+    font-size: 52px;
+    margin: 30px 0;
+}
+p {
+    font-family: 'Roboto';
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.about_a{
+    display: inline-block;
+    background-color: #f76e2a;
+    text-align: center;
+    margin: 30px 0;
+    padding: 20px 28px;
+    font-family: 'Cinzel';
+    color: white;
+}
