@@ -93,7 +93,7 @@ function rippleEffect(event) {
     const size = Math.min(pos.width, pos.height);
     
     // Set the size of the ripple
-    rippleElement.style.width = rippleElement.style.height = `40px`; // Corrected here
+    rippleElement.style.width = rippleElement.style.height = `${size}px`; // Corrected here
 
     // Position the ripple at the click location
     const x = event.clientX - pos.left - size / 2;
@@ -115,6 +115,3 @@ const bookAndMenuButtons = document.querySelectorAll('.cta-buttons button');
 bookAndMenuButtons.forEach(button => {
     button.addEventListener("click", rippleEffect);
 });
-
-
-
