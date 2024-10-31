@@ -44,4 +44,22 @@ function submitSubForm(event){
 const newsletterForm = document.querySelector("form");
 newsletterForm.addEventListener("submit", submitSubForm);
 
+// mouse click event to alternate the border btw the Book a Table button and Open menu button upon click
+const bookButton = document.getElementById("book_btn");
+const menuButton = document.getElementById("menu_btn");
+
+bookButton.addEventListener("click", () => {
+    // Add border to "Book a Table" and remove border from "Open Menu"
+    bookButton.style.border = "2px solid white";
+    menuButton.style.border = "none";
+});
+
+// Set up click event for "Open Menu" button
+menuButton.addEventListener("click", () => {
+    // Add border to "Open Menu" and remove from "Book a Table"
+    menuButton.style.border = "2px solid white";
+    bookButton.style.border = "none";
+});
+
+
 
