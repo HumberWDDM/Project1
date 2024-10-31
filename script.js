@@ -24,3 +24,24 @@ function handleScroll() { // listens for mouse scroll to  change nav bar colour 
 }
 
 window.addEventListener("scroll", handleScroll);
+
+//To validate the newsletter form and ensure the email is correctly formatted before accepting the subscription
+function submitSubForm(event){
+    event.preventDefault();
+    const emailInput = this.querySelector("input[type='text']"); // the email input element
+    const email = emailInput.value; //get the real email entered in the email input
+    const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/; //general pattern of an email(e.g., trust123@humber.ca)
+
+    if (!email.match(emailPattern)) {
+        alert("Please enter a valid email address.");
+        emailInput.focus();
+    } else {
+        alert("Thank you for subscribing!");
+        this.reset();// clear the email input element
+    }
+
+}
+const newsletterForm = document.querySelector("form");
+newsletterForm.addEventListener("submit", submitSubForm);
+
+
