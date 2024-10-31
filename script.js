@@ -80,3 +80,35 @@ Img.forEach(image => {
     image.addEventListener("mouseenter", zoomOut);
     image.addEventListener("mouseleave", zoomIn);
 })
+
+// Animation for ripple effect for when a button is clicked
+function rippleEffect(event) {
+    event.preventDefault();
+    
+    const rippleElement = document.createElement('span');
+    rippleElement.classList.add('ripple');
+
+    // Get the position of the button
+    const pos = this.getBoundingClientRect();
+    const size = Math.min(pos.width, pos.height);
+    
+    // Set the size of the ripple
+    rippleElement.style.width = rippleElement.style.height = `40px`; // Corrected here
+
+    // Position the ripple at the click location
+    const x = event.clientX - pos.left - size / 2;
+    const y = event.clientY - pos.top - size / 2;
+
+    rippleElement.style.left = `${x}px`;
+    rippleElement.style.top = `${y}px`;
+    
+    this.appendChild(rippleElement);
+    
+    // Remove the ripple element after the animation ends
+    rippleElement.addEventListener('animationend', () => {
+        rippleElement.remove();
+    });
+}
+
+
+
