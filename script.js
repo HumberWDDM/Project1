@@ -73,3 +73,6 @@ function zoomIn(event){
     event.preventDefault();
     this.style.transform ="scale(1)";
 }
+
+const foodImg = document.querySelector(".rgt");
+foodImg.addEventListener("mouseenter", zoomOut);
