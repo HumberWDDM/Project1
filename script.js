@@ -76,3 +76,4 @@ function zoomIn(event){
 
 const foodImg = document.querySelector(".rgt");
 foodImg.addEventListener("mouseenter", zoomOut);
+foodImg.addEventListener("mouseleave", zoomIn);
