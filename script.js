@@ -68,3 +68,8 @@ function zoomOut(event){
     this.style.transform = "scale(1.1)";
     this.style.transition = "transform 0.3s ease";
 }
+
+function zoomIn(event){
+    event.preventDefault();
+    this.style.transform ="scale(1)";
+}
