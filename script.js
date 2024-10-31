@@ -110,5 +110,11 @@ function rippleEffect(event) {
     });
 }
 
+// apply ripple effect to book a table and Open menu buttons
+const bookAndMenuButtons = document.querySelectorAll('.cta-buttons button');
+bookAndMenuButtons.forEach(button => {
+    button.addEventListener("click", rippleEffect);
+});
+
 
 
