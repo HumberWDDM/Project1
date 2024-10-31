@@ -62,4 +62,9 @@ menuButton.addEventListener("click", () => {
 });
 
 
-
+// animation for images upon mouse hover
+function zoomOut(event){
+    event.preventDefault();
+    this.style.transform = "scale(1.1)";
+    this.style.transition = "transform 0.3s ease";
+}
