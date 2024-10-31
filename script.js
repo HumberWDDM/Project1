@@ -78,4 +78,5 @@ const Img = document.querySelectorAll(".rgt");
 console.log(Img);
 Img.forEach(image => {
     image.addEventListener("mouseenter", zoomOut);
+    image.addEventListener("mouseleave", zoomIn);
 })
