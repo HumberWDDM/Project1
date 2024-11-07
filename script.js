@@ -1,5 +1,6 @@
-// add a smooth scroll effect when navigation links are clicked
+// add a smooth scroll effect when  links are clicked
 const navigation = document.querySelectorAll("a");
+// console.log(navigation.length);
 function smoothScroll(event) { // listens for mouse click to make scrolling smooth (mouse event 1)
     event.preventDefault();
     const targetId = this.getAttribute("href").substring(1);
@@ -34,6 +35,7 @@ function submitSubForm(event){
 
     if (!email.match(emailPattern)) {
         alert("Please enter a valid email address.");
+        this.reset();
         emailInput.focus();
     } else {
         alert("Thank you for subscribing!");
