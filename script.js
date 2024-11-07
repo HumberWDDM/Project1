@@ -49,7 +49,7 @@ const bookButton = document.getElementById("book_btn");
 const menuButton = document.getElementById("menu_btn");
 
 bookButton.addEventListener("click", () => {
-    // Add border to "Book a Table" and remove border from "Open Menu"
+    // now, add a border to "Book a Table" button and remove border from "Open Menu" button
     bookButton.style.border = "2px solid white";
     menuButton.style.border = "none";
 });
@@ -89,15 +89,15 @@ function rippleEffect(event) {
     rippleElement.classList.add('ripple');
 
     // Get the position of the button
-    const pos = this.getBoundingClientRect();
-    const size = Math.min(pos.width, pos.height);
+    const rect = this.getBoundingClientRect();
+    const size = Math.min(rect.width, rect.height);
     
     // Set the size of the ripple
-    rippleElement.style.width = rippleElement.style.height = `${size}px`; // Corrected here
+    rippleElement.style.width = rippleElement.style.height = `${size}px`; 
 
     // Position the ripple at the click location
-    const x = event.clientX - pos.left - size / 2;
-    const y = event.clientY - pos.top - size / 2;
+    const x = event.clientX - rect.left - size / 2;
+    const y = event.clientY - rect.top - size / 2;
 
     rippleElement.style.left = `${x}px`;
     rippleElement.style.top = `${y}px`;
